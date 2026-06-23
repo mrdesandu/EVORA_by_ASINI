@@ -21,7 +21,7 @@ export default function About() {
           <p className="font-body text-ink/80 leading-relaxed">
             EVORA is a Sri Lankan fragrance house dedicated to producing
             high-quality perfumes inspired by nature. Every scent in our
-            collection draws from something real — a flower, a fruit, a
+            collection draws from something real , a flower, a fruit, a
             memory — and is built to reflect the personality and lifestyle of
             the person who wears it.
           </p>
@@ -41,7 +41,7 @@ export default function About() {
           <h2 className="font-display text-2xl text-ink mb-3">Made Locally</h2>
           <p className="font-body text-ink/80 leading-relaxed">
             EVORA is locally developed in Sri Lanka, offering fragrances for
-            both men and women — from the tropical brightness of Araliya to
+            both men and women , from the tropical brightness of Araliya to
             the bold warmth of Chocolate. We're proud to build a fragrance
             brand rooted in home soil with a presence that reaches further.
           </p>

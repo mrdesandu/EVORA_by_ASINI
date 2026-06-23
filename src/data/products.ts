@@ -33,7 +33,7 @@ export const products: Product[] = [
     price: 7200,
     size: "50ml",
     accent: "#E8A4B8",
-    image: "https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/lotus-product.jpg",
   },
   {
     slug: "sakura",
@@ -50,7 +50,7 @@ export const products: Product[] = [
     price: 7500,
     size: "50ml",
     accent: "#F2C6D4",
-    image: "https://images.pexels.com/photos/35824747/pexels-photo-35824747.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/sakura-product.jpg",
   },
   {
     slug: "araliya",
@@ -152,7 +152,7 @@ export const products: Product[] = [
     price: 7600,
     size: "100ml",
     accent: "#B23A5C",
-    image: "https://images.pexels.com/photos/4925718/pexels-photo-4925718.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/vanilla-product.jpg",
   },
 ];
 
