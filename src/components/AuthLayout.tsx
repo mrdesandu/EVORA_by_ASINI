@@ -11,7 +11,7 @@ export default function AuthLayout({
 }) {
   return (
     <div className="min-h-screen bg-cream flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-sm bg-[#df7296] rounded-[3rem] px-8 py-12 flex flex-col items-center shadow-xl shadow-rose/10">
+      <div className="w-full max-w-sm bg-rose rounded-[3rem] px-8 py-12 flex flex-col items-center shadow-xl shadow-rose/10">
         <Link to="/" className="flex flex-col items-center gap-2 mb-8 text-center group">
           <Logo variant="crest" className="w-20 h-20 drop-shadow-md transition-transform duration-300 group-hover:scale-105" />
           <span className="font-display tracking-[0.25em] text-2xl text-cream font-light mt-2">
@@ -24,7 +24,7 @@ export default function AuthLayout({
 
         <div className="w-full flex flex-col gap-4">{children}</div>
 
-        {footer && <div className="mt-8 text-center w-full border-t border-cream/20 pt-4">{footer}</div>}
+        {footer && <div className="mt-8 text-center w-full">{footer}</div>}
       </div>
     </div>
   );

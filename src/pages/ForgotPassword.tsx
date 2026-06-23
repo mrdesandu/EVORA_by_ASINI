@@ -1,14 +1,18 @@
 import { useState, type FormEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthLayout, { AuthInput } from "../components/AuthLayout";
 
 export default function ForgotPassword() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setSent(true);
+    setTimeout(() => {
+      navigate("/reset-password");
+    }, 1500);
   }
 
   return (
@@ -20,14 +24,16 @@ export default function ForgotPassword() {
       }
     >
       {sent ? (
-        <p className="font-body text-sm text-cream/95 text-center leading-relaxed">
-          If an account exists for <span className="font-medium">{email}</span>, a reset link is on its way.
-        </p>
+        <div className="flex flex-col items-center gap-3 py-4 text-center">
+          <p className="font-body text-xs text-cream/95 leading-relaxed">
+            Reset link has been sent to <span className="font-medium text-white">{email}</span>.
+          </p>
+          <p className="font-body text-[0.68rem] text-cream/70 animate-pulse">
+            Redirecting to confirm password...
+          </p>
+        </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <p className="font-body text-xs text-cream/85 text-center -mt-1 mb-1">
-            Enter your email and we'll send you a link to reset your password.
-          </p>
           <AuthInput label="E-mail" type="email" value={email} onChange={setEmail} />
 
           <button 

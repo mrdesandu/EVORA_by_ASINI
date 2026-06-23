@@ -31,9 +31,6 @@ export default function ResetPassword() {
       }
     >
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <p className="font-body text-xs text-cream/85 text-center -mt-1 mb-1">
-          Choose a new password for your account.
-        </p>
         <AuthInput label="New Password" type="password" value={password} onChange={setPassword} />
         <AuthInput
           label="Confirm Password"
