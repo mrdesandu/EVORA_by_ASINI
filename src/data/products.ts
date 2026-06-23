@@ -118,7 +118,7 @@ export const products: Product[] = [
     price: 6800,
     size: "100ml",
     accent: "#9C2F4F",
-    image: "https://images.pexels.com/photos/30232707/pexels-photo-30232707.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/apple-product.jpg",
   },
   {
     slug: "chocolate",

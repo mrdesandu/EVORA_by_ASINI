@@ -56,13 +56,7 @@ export default function MenCollection() {
       {/* Controls and Grid */}
       <section className="mx-auto max-w-6xl px-6 sm:px-10 py-10 sm:py-16">
         {/* Controls */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 mb-12">
-          <div className="flex items-center gap-2">
-            <span className="font-body text-xs uppercase tracking-wider text-taupe">
-              {filtered.length} Fragrances found
-            </span>
-          </div>
-
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-5 mb-12">
           <div className="flex flex-wrap gap-3 items-center">
             <input
               type="search"

@@ -22,7 +22,7 @@ export default function About() {
             EVORA is a Sri Lankan fragrance house dedicated to producing
             high-quality perfumes inspired by nature. Every scent in our
             collection draws from something real , a flower, a fruit, a
-            memory — and is built to reflect the personality and lifestyle of
+            memory , and is built to reflect the personality and lifestyle of
             the person who wears it.
           </p>
         </div>
