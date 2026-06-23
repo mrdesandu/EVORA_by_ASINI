@@ -70,6 +70,16 @@ export default function ProductDetail() {
               <span className="font-body text-sm text-taupe ml-2">/ {product.size}</span>
             </p>
 
+            {/* Koko Payment Banner */}
+            <div className="flex items-center gap-2.5 mt-2.5 bg-blush/20 border border-blush/40 px-4 py-2.5 rounded-2xl max-w-md">
+              <span className="text-[0.7rem] font-body font-semibold tracking-wide uppercase text-rose-dark bg-white border border-rose-soft/40 px-2 py-0.5 rounded-md shadow-xs">
+                Koko
+              </span>
+              <span className="font-body text-xs text-taupe">
+                or 3 interest-free installments of <span className="font-semibold text-rose-dark">Rs {Math.round(product.price / 3).toLocaleString()}</span>
+              </span>
+            </div>
+
             <p className="font-body text-sm text-ink/80 mt-6 leading-relaxed max-w-md">
               {product.description}
             </p>
