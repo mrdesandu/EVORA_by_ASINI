@@ -67,7 +67,7 @@ export const products: Product[] = [
     price: 6900,
     size: "50ml",
     accent: "#D98DA8",
-    image: "https://images.pexels.com/photos/33994391/pexels-photo-33994391.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/araliya-product.jpg",
   },
   {
     slug: "rose",
@@ -135,7 +135,7 @@ export const products: Product[] = [
     price: 8200,
     size: "100ml",
     accent: "#7A2238",
-    image: "https://images.pexels.com/photos/17978253/pexels-photo-17978253.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/chocolate-product.jpg",
   },
   {
     slug: "vanilla",
