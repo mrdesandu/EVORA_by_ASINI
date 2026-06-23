@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color tokens — EVORA palette */
+  --color-rose: #e573a1;
+  --color-rose-dark: #cd5a89;
+  --color-rose-soft: #E8A4B8;
+  --color-blush: #F7DCE2;
+  --color-cream: #FBF3EC;
+  --color-ink: #221B1C;
+  --color-taupe: #8B6F5C;
+  --color-taupe-light: #C8B6AA;
+
+  /* Type tokens */
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Jost", "Helvetica Neue", sans-serif;
+
+  /* Radii / shadows for the petal-curve signature */
+  --radius-petal: 2.5rem 0.5rem 2.5rem 0.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+
+  /* visible keyboard focus, kept consistent with the brand color */
+  :focus-visible {
+    outline: 2px solid var(--color-rose);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Signature petal-curve divider used between major sections */
+  .petal-divider {
+    border-radius: var(--radius-petal);
+  }
+
+  .btn-primary {
+    background-color: var(--color-rose);
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    padding: 0.85rem 2.25rem;
+    border-radius: 999px;
+    transition: background-color 200ms ease, transform 200ms ease;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-rose-dark);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    border: 1.5px solid var(--color-rose);
+    color: var(--color-rose);
+    font-family: var(--font-body);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    padding: 0.8rem 2.1rem;
+    border-radius: 999px;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+  .btn-outline:hover {
+    background-color: var(--color-rose);
+    color: var(--color-cream);
+  }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.72rem;
+    color: var(--color-rose);
+  }
+}
